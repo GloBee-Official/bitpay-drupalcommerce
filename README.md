@@ -4,12 +4,12 @@ This is a Community-supported project.
 
 If you are interested in becoming a maintainer of this project, please contact us at integrations@globee.com. Developers at GloBee will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
 
-# BitPay for Drupal Commerce (Commerce BitPay)
+# GloBee plugin for Drupal Commerce (Commerce GloBee)
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/GloBee-Official/bitpay-drupalcommerce/master/LICENSE.txt)
 
 ## Plugin Installation, Configuration, and Usage
-Follow the instructions found in the [Commerce BitPay Guide](GUIDE.md)
+Follow the instructions found in the [Commerce GloBee Guide](GUIDE.md)
 
 ## Development Setup
 
@@ -47,10 +47,6 @@ $ ./bin/robo build
 # ./build/commerce-bitpay.zip - the distribution archive
 ```
 
-## Contributing
+## Contribute
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+To contribute to this project, please fork and submit a pull request.
