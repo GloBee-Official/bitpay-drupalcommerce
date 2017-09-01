@@ -6,7 +6,7 @@ If you are interested in becoming a maintainer of this project, please contact u
 
 # GloBee plugin for Drupal Commerce (Commerce GloBee)
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/GloBee-Official/bitpay-drupalcommerce/master/LICENSE.txt)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/GloBee-Official/bitpay-drupalcommerce/master/LICENSE)
 
 ## Plugin Installation, Configuration, and Usage
 Follow the instructions found in the [Commerce GloBee Guide](GUIDE.md)
