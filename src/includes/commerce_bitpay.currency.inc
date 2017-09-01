@@ -34,15 +34,15 @@ function commerce_bitpay_bitcoin_currency_convert($amount, $currency_code, $targ
   $exponent = $target_currency['decimals'] - $currency['decimals'];
   $amount *= pow(10, $exponent);
 
-  $response = drupal_http_request('https://bitpay.com/rates/' . $target_currency_code);
+  $response = drupal_http_request('https://globee.com/rates/' . $target_currency_code);
   if ('200' === $response->code) {
     $bitpay_rate = json_decode($response->data, TRUE);
     if (isset($bitpay_rate['data']['rate'])) {
       return $amount * $bitpay_rate['data']['rate'];
     }
-    commerce_bitpay_log('error', t('Invalid data from BitPay for BTC conversion rate'));
-    throw new \Exception('Invalid data from BitPay for BTC conversion rate');
+    commerce_bitpay_log('error', t('Invalid data from GloBee for BTC conversion rate'));
+    throw new \Exception('Invalid data from GloBee for BTC conversion rate');
   }
-  commerce_bitpay_log('error', t('Could not retrieve BTC conversion rate from BitPay'));
-  throw new \Exception('Could not retrieve BTC conversion rate from BitPay');
+  commerce_bitpay_log('error', t('Could not retrieve BTC conversion rate from GloBee'));
+  throw new \Exception('Could not retrieve BTC conversion rate from GloBee');
 };

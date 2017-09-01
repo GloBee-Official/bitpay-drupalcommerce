@@ -12,7 +12,7 @@ if (!class_exists('Bitpay/Autoloader')) {
     \Bitpay\Autoloader::register();
   }
   else {
-    throw new \Exception('BitPay Library could not be loaded');
+    throw new \Exception('GloBee Library could not be loaded');
   }
 }
 
@@ -22,16 +22,16 @@ if (!class_exists('Bitpay/Autoloader')) {
 function commerce_bitpay_encrypt($data) {
 
   if (FALSE === isset($data) || TRUE === empty($data)) {
-    throw new \Exception('The Bitpay payment plugin was called to encrypt data but no data was passed!');
+    throw new \Exception('The GloBee payment plugin was called to encrypt data but no data was passed!');
   }
   $mcrypt_ext  = new \Bitpay\Crypto\McryptExtension();
   $fingerprint = substr(sha1(sha1(__DIR__)), 0, 24);
   if (FALSE === isset($fingerprint) || TRUE === empty($fingerprint)) {
-    throw new \Exception('The Bitpay payment plugin was called to encrypt data but could not generate a fingerprint parameter!');
+    throw new \Exception('The GloBee payment plugin was called to encrypt data but could not generate a fingerprint parameter!');
   }
   $encrypted = $mcrypt_ext->encrypt(base64_encode($data), $fingerprint, '00000000');
   if (TRUE === empty($encrypted)) {
-    throw new \Exception('The Bitpay payment plugin was called to encrypt data but failed');
+    throw new \Exception('The GloBee payment plugin was called to encrypt data but failed');
   }
 
   return $encrypted;
@@ -43,12 +43,12 @@ function commerce_bitpay_encrypt($data) {
 function commerce_bitpay_decrypt($encrypted) {
 
   if (FALSE === isset($encrypted) || TRUE === empty($encrypted)) {
-    throw new \Exception('The Bitpay payment plugin was called to decrypt data but no data was passed!');
+    throw new \Exception('The GloBee payment plugin was called to decrypt data but no data was passed!');
   }
   $mcrypt_ext  = new \Bitpay\Crypto\McryptExtension();
   $fingerprint = substr(sha1(sha1(__DIR__)), 0, 24);
   if (FALSE === isset($fingerprint) || TRUE === empty($fingerprint)) {
-    throw new \Exception('The Bitpay payment plugin was called to decrypt data but could not generate a fingerprint parameter!');
+    throw new \Exception('The GloBee payment plugin was called to decrypt data but could not generate a fingerprint parameter!');
   }
   $decrypted = base64_decode($mcrypt_ext->decrypt($encrypted, $fingerprint, '00000000'));
   // Strict base64 char check.
@@ -59,7 +59,7 @@ function commerce_bitpay_decrypt($encrypted) {
     $decrypted = base64_decode($decrypted);
   }
   if (TRUE === empty($decrypted)) {
-    throw new \Exception('The Bitpay payment plugin was called to unserialize a decrypted object and failed! The decrypt function was called with "' . $encrypted . '"');
+    throw new \Exception('The GloBee payment plugin was called to unserialize a decrypted object and failed! The decrypt function was called with "' . $encrypted . '"');
   }
 
   return $decrypted;

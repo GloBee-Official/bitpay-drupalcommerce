@@ -1,7 +1,7 @@
-# Using BitPay for Drupal Commerce
+# Using GloBee for Drupal Commerce
 
 ## Prerequisites
-You must have a BitPay merchant account to use this plugin.  It's free to [sign-up for a BitPay merchant account](https://bitpay.com/start).
+You must have a GloBee merchant account to use this plugin.  It's free to [sign-up for a GloBee merchant account](https://globee.com/).
 
 ## Server Requirements
 
@@ -17,26 +17,26 @@ You must have a BitPay merchant account to use this plugin.  It's free to [sign-
 
 1. Go to Administration > Site Settings > Advanced Settings > Modules > Install new module
 
-   In **Install from a URL**, enter `https://github.com/bitpay/bitpay-drupalcommerce/releases/download/v2.3.0/commerce_bitpay-7.x-2.3.0.zip`
+   In **Install from a URL**, enter `https://github.com/GloBee-Official/bitpay-drupalcommerce/releases/download/v2.3.0/commerce_bitpay-7.x-2.3.0.zip`
    ![Install a new module](http://sambohler.github.io/drupalcommerce/install.png)
 3. Click **Install**
 4. Go to Administration > Site Settings > Advanced Settings > Modules
 5. Type *bitpay* into the filter or search for the module in the **Commerce (contrib)** tab.
-   ![Enable Commerce BitPay module](http://sambohler.github.io/drupalcommerce/enable.png)
+   ![Enable Commerce GloBee module](http://sambohler.github.io/drupalcommerce/enable.png)
 6. Check **Enabled** and save then click **Save configuration**
 
 ## Configuration
-1. Scroll back to Commerce Bitpay, and click the **Configure** link to go to the *BitPay Configuration Page*
+1. Scroll back to Commerce GloBee, and click the **Configure** link to go to the *GloBee Configuration Page*
    ![Configure Commerce BitPay](http://sambohler.github.io/drupalcommerce/configure.png)
 
-### Connecting to BitPay
-1. At the *BitPay Configuration Page*, click **Connect To BitPay Live**, or **Connect To BitPay Test**
-   ![Connect to BitPay](http://sambohler.github.io/drupalcommerce/connect.png)
-2. Login at https://bitpay.com or https://test.bitpay.com if necessary
-3. At BitPay's API Token Request page, click **Approve**
+### Connecting to GloBee
+1. At the *GloBee Configuration Page*, click **Connect To GloBee Live**, or **Connect To GloBee Test**
+   ![Connect to GloBee](http://sambohler.github.io/drupalcommerce/connect.png)
+2. Login at https://globee.com or https://test.globee.com if necessary
+3. At GloBee's API Token Request page, click **Approve**
    ![Approve API Token Request](http://sambohler.github.io/drupalcommerce/approve.png)
 
-4. You should now be back at the *BitPay Configuration Page* on your Drupal Commerce site.
+4. You should now be back at the *GloBee Configuration Page* on your Drupal Commerce site.
    It should say `Connected to Livenet` or `Connected to Testnet`
    ![Connected](http://sambohler.github.io/drupalcommerce/connected.png)
 
@@ -46,7 +46,7 @@ You must have a BitPay merchant account to use this plugin.  It's free to [sign-
 ### Enable Payment Method
 1. Go to Administration > Store Settings > Advanced store settings > Payment Methods
    ![Enable Payment Method](http://sambohler.github.io/drupalcommerce/enablepayment.png)
-   Under **Disabled payment method rules** find **BitPay** and click **enable**
+   Under **Disabled payment method rules** find **GloBee** and click **enable**
 2. You are not ready to have customers pay with Bitcoin!
 
 
@@ -56,7 +56,7 @@ You must have a BitPay merchant account to use this plugin.  It's free to [sign-
    Expand **Enabled Currencies**, then scrolldown to *BTC - Bitcoin - B⃦* and check the box next to it
 2. Click **Save configuration**
 3. Once enabled, you will be able to set the price of products in BTC.  
-   During checkout, price totals will be calculated via BitPay's BTC rate for your default store currency
+   During checkout, price totals will be calculated via GloBee's BTC rate for your default store currency
    ![Pricing and currency conversion](http://sambohler.github.io/drupalcommerce/pricing.png)
 
 ## Usage
@@ -64,7 +64,7 @@ Once enabled, your customers will be given the option to pay with Bitcoin
 ![Checkout](http://sambohler.github.io/drupalcommerce/checkout.png)
 
 Once they checkout they are redirected to a full screen BitPay invoice to pay for the order.
-![BitPay Invoice](http://sambohler.github.io/drupalcommerce/invoice.png)
+![GloBee Invoice](http://sambohler.github.io/drupalcommerce/invoice.png)
 
 As a merchant, the orders in your Drupal Commerce store can be treated as any other
 order. You may need to adjust the Invoice Settings depending on your order
@@ -72,7 +72,7 @@ fulfillment.
 
 ## How to Get Optimal Performance From the Plugin
 
-It is highly recommended you install the GMP extension for PHP to acheive maximum performance when using this plugin.
+It is highly recommended you install the GMP extension for PHP to achieve maximum performance when using this plugin.
 
 ### Compile PHP with GMP
 
@@ -114,4 +114,4 @@ extension=gmp.so
 
 ## Support
 
-If you run into any issues after installing the plugin, you can search for help on [Commerce BitPay's lab on BitPay Labs](http://bitpaylabs.com/c/plugins/drupalcommerce) or send a Support Request to [BitPay Support](https://support.bitpay.com).
+If you run into any issues after installing the plugin, you can send a Support Request to [GloBee Support](https://support.globee.com).

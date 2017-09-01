@@ -1,5 +1,5 @@
-name = Commerce BitPay
-description = Implements BitPay payment services for use with Drupal Commerce.
+name = Commerce GloBee
+description = Implements GloBee payment services for use with Drupal Commerce.
 package = Commerce (contrib)
 dependencies[] = commerce
 dependencies[] = commerce_payment

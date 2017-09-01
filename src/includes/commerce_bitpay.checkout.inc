@@ -121,12 +121,12 @@ function commerce_bitpay_redirect_form($form, &$form_state, $order, $payment_met
     commerce_payment_transaction_save($transaction);
   }
   catch (\Exception $e) {
-    drupal_set_message(t('Sorry, but there was a problem communicating with BitPay for Bitcoin checkout.', array()), 'error');
+    drupal_set_message(t('Sorry, but there was a problem communicating with GloBee for Bitcoin checkout.', array()), 'error');
     return;
   }
 
   // Update the order status.
-  commerce_order_status_update($order, 'checkout_payment', FALSE, NULL, t('Customer has chosen to pay with Bitcoin via BitPay.'));
+  commerce_order_status_update($order, 'checkout_payment', FALSE, NULL, t('Customer has chosen to pay with Bitcoin via GloBee.'));
   commerce_order_save($order);
   drupal_goto($invoice->getUrl());
 }

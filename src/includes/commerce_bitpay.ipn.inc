@@ -35,7 +35,7 @@ function commerce_bitpay_ipn_handler($order, $transaction) {
   // Try to set the network based on the url first since the merchant may have
   // switched networks while test invoices are still being confirmed.
   $network = NULL;
-  if (FALSE !== strpos($json['url'], 'https://test.bitpay.com')) {
+  if (FALSE !== strpos($json['url'], 'https://test.globee.com')) {
     $network = COMMERCE_BITPAY_MODE_TEST;
   }
   else {

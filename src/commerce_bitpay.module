@@ -21,9 +21,9 @@ function commerce_bitpay_commerce_payment_method_info()
     $payment_methods = array();
 
     $payment_methods['commerce_bitpay'] = array(
-    'title' => t('BitPay'),
+    'title' => t('GloBee'),
     'display_title' => t('Bitcoin'),
-    'description' => t('Provides Bitcoin payment during checkout via BitPay.'),
+    'description' => t('Provides Bitcoin payment during checkout via GloBee.'),
     'terminal' => false,
         'offsite' => true,
     'offsite_autoredirect' => true,
@@ -56,8 +56,8 @@ function commerce_bitpay_menu()
 
   // Add a menu item for configuring the detail payment rule
   $items['admin/settings/commerce-bitpay'] = array(
-    'title' => 'Commerce BitPay Configuration',
-    'description' => 'Configure the Commerce BitPay module',
+    'title' => 'Commerce GloBee Configuration',
+    'description' => 'Configure the Commerce GloBee module',
     'page callback' => 'commerce_bitpay_configure',
     'access arguments' => array('administer payment methods'),
     'type' => MENU_CALLBACK,
@@ -66,8 +66,8 @@ function commerce_bitpay_menu()
 
   // Connect to BitPay
   $items['admin/bitpay/connect'] = array(
-        'title' => 'Connect to BitPay',
-    'description' => 'Connect to BitPay',
+        'title' => 'Connect to GloBee',
+    'description' => 'Connect to GloBee',
     'page callback' => 'commerce_bitpay_connect',
         'page arguments' => array(3),
     'access arguments' => array('administer payment methods'),
@@ -77,8 +77,8 @@ function commerce_bitpay_menu()
 
     // Disconnect to BitPay
   $items['admin/bitpay/disconnect'] = array(
-        'title' => 'Disconnect from BitPay',
-    'description' => 'Disconnect from BitPay',
+        'title' => 'Disconnect from GloBee',
+    'description' => 'Disconnect from GloBee',
     'page callback' => 'commerce_bitpay_disconnect',
     'access arguments' => array('administer payment methods'),
         'type' => MENU_CALLBACK,
@@ -97,8 +97,8 @@ function commerce_bitpay_menu()
 
   // Connect to BitPay
   $items['admin/advanced_help/commerce_bitpay'] = array(
-        'title' => 'Connect to BitPay',
-    'description' => 'Connect to BitPay',
+        'title' => 'Connect to GloBee',
+    'description' => 'Connect to GloBee',
     'page callback' => 'commerce_bitpay_connect',
         'page arguments' => array(3),
     'access arguments' => array('administer payment methods'),

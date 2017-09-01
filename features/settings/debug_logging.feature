@@ -1,5 +1,5 @@
 Feature: Enable/Disable Debug Logging
-  As a merchant of BitPay
+  As a merchant of GloBee
   I want to set the debug log level
   So that I can get more information about errors
 

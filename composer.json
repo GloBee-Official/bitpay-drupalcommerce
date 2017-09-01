@@ -1,24 +1,29 @@
 {
-    "name": "bitpay/bitpay-drupalcommerce",
-    "description": "BitPay Payment Module for Drupal Commerce",
+    "name": "GloBee-Official/bitpay-drupalcommerce",
+    "description": "GloBee Payment Module for Drupal Commerce",
     "version": "2.3.0",
     "type": "drupalcommerce-module",
     "keywords": ["bitcoin", "bitpay", "drupalcommerce", "payment", "btc", "xbt"],
-    "homepage": "https://github.com/bitpay/bitpay-drupalcommerce",
+    "homepage": "https://github.com/GloBee-Official/bitpay-drupalcommerce",
     "license": "MIT",
     "authors": [
         {
-            "name": "BitPay, Inc.",
-            "homepage": "https://bitpay.com"
+            "name": "GloBee, Inc.",
+            "homepage": "https://globee.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/GloBee-Official/php-bitpay-client.git"
         }
     ],
     "support": {
-        "email": "support@bitpay.com",
-        "issues": "https://github.com/bitpay/bitpay-drupalcommerce/issues"
+        "email": "support@globee.com",
+        "issues": "https://github.com/GloBee-Official/bitpay-drupalcommerce/issues"
     },
     "require": {
-        "php" : ">=5.4.0",
-        "bitpay/php-client": "dev-master"
+        "php" : ">=5.4.0"
     },
     "require-dev": {
         "phpunit/phpunit" : "4.*",

@@ -14,7 +14,7 @@ if (!class_exists('Bitpay/Autoloader')) {
     \Bitpay\Autoloader::register();
   }
   else {
-    throw new \Exception('BitPay Library could not be loaded');
+    throw new \Exception('GloBee Library could not be loaded');
   }
 }
 
@@ -50,7 +50,7 @@ function commerce_bitpay_requirements($phase) {
 
     $requirements = array();
     $requirements['bitpay'] = array(
-        'title' => $t('BitPay'),
+        'title' => $t('GloBee'),
         'value' => implode(', ', $values),
         'description' => implode(' ', $descriptions),
         'severity' => (empty($description)) ? REQUIREMENT_OK : REQUIREMENT_ERROR,

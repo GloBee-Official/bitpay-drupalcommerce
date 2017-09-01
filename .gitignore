@@ -5,3 +5,4 @@ bin
 www
 log
 .DS_STORE
+.idea/

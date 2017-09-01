@@ -2,14 +2,11 @@
 
 This is a Community-supported project.
 
-If you are interested in becoming a maintainer of this project, please contact us at integrations@bitpay.com. Developers at BitPay will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
+If you are interested in becoming a maintainer of this project, please contact us at integrations@globee.com. Developers at GloBee will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
 
 # BitPay for Drupal Commerce (Commerce BitPay)
 
-[![Latest Version](https://img.shields.io/github/release/bitpay/bitpay-drupalcommerce.svg?style=flat-square)](https://github.com/bitpay/bitpay-drupalcommerce/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://travis-ci.org/bitpay/bitpay-drupalcommerce.svg?branch=master)](https://travis-ci.org/bitpay/bitpay-drupalcommerce)
-[![Join the chat at https://gitter.im/bitpay/plugin](http://sambohler.github.io/gitter.svg)](https://gitter.im/bitpay/bitpay-drupalcommerce?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Plugin Installation, Configuration, and Usage
 Follow the instructions found in the [Commerce BitPay Guide](GUIDE.md)
@@ -18,7 +15,7 @@ Follow the instructions found in the [Commerce BitPay Guide](GUIDE.md)
 
 ``` bash
 # Clone the repo
-$ git clone https://github.com/bitpay/bitpay-drupalcommerce.git
+$ git clone https://github.com/GloBee-Official/bitpay-drupalcommerce.git
 $ cd ./bitpay-drupalcommerce
 
 # Install dependencies via Composer

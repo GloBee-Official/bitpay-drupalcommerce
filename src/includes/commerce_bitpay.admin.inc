@@ -12,7 +12,7 @@ function commerce_bitpay_configure() {
 
   // Check Payment UI is enabled.
   if (!module_exists('commerce_payment_ui')) {
-    drupal_set_message(t('The Payment UI module is disabled - please enable it before configuring Commerce BitPay'), 'warning');
+    drupal_set_message(t('The Payment UI module is disabled - please enable it before configuring Commerce GloBee'), 'warning');
     drupal_goto('admin/modules');
   }
 
@@ -52,7 +52,7 @@ function commerce_bitpay_connect($network) {
 
   // Check Payment UI is enabled.
   if (!module_exists('commerce_payment_ui')) {
-    drupal_set_message(t('The Payment UI module is disabled - please enable it before configuring Commerce BitPay'), 'warning');
+    drupal_set_message(t('The Payment UI module is disabled - please enable it before configuring Commerce GloBee'), 'warning');
     drupal_goto('admin/modules');
   }
 

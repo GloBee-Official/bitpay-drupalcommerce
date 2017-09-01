@@ -1,14 +1,14 @@
-Feature: Custom Order Statuses for BitPay Invoices
-  As a merchant of BitPay
+Feature: Custom Order Statuses for GloBee Invoices
+  As a merchant of GloBee
   I need to map bitpay invoice status to an order status
   So that I can find the status of orders in my system
 
   Background:
     Given I'm a merchant 
     And I have my risk/speed settings set to medium
-    And I have matched bitpay invoice status paid to order status processing
-    And I have matched bitpay invoice status confirmed to order status affirmed
-    And I have matched bitpay invoice status complete to order status finished
+    And I have matched GloBee invoice status paid to order status processing
+    And I have matched GloBee invoice status confirmed to order status affirmed
+    And I have matched GloBee invoice status complete to order status finished
     And I have a new order y with invoice x
 
   Scenario: A new invoice is paid 
