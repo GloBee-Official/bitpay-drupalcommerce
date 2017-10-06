@@ -45,7 +45,7 @@ class RoboFile extends \Robo\Tasks
     {
         $this->taskDeleteDir('www')->run();
         $this->taskFileSystemStack()->mirror('src', 'www')->run();
-        $this->taskFileSystemStack()->mirror('vendor/bitpay/php-client/src/Bitpay', 'www/libraries/bitpay')->run();
+        $this->taskFileSystemStack()->mirror('vendor/paybee/php-client/src/Bitpay', 'www/libraries/bitpay')->run();
         $this->taskReplaceInFile('www/includes/commerce_bitpay.library.inc')
              ->from('{{bitpay_lib_version}}')
              ->to($this->depver('bitpay/php-client'))
@@ -70,7 +70,7 @@ class RoboFile extends \Robo\Tasks
     {
         $this->taskDeleteDir('build')->run();
         $this->taskFileSystemStack()->mirror('src', 'build/commerce-bitpay')->run();
-        $this->taskFileSystemStack()->mirror('vendor/bitpay/php-client/src/Bitpay', 'build/commerce-bitpay/libraries/bitpay')->run();
+        $this->taskFileSystemStack()->mirror('vendor/paybee/php-client/src/Bitpay', 'build/commerce-bitpay/libraries/bitpay')->run();
         $this->taskReplaceInFile('build/commerce-bitpay/includes/commerce_bitpay.library.inc')
              ->from('{{bitpay_lib_version}}')
              ->to($this->depver('bitpay/php-client'))
